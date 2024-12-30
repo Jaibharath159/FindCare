@@ -34,7 +34,7 @@ const AddDoctorComponent = () => {
   };
 
   const writeDataToDB = async (data) => {
-    // setDoctorData(null);
+ 
 
     try {
       const starCountRef = ref(database, "doctors/" + btoa(data?.email));
