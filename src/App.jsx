@@ -63,6 +63,7 @@ function App() {
             <Route path="*" element={<RouteNotFoundComponent />} />
           </Routes>
         </div>
+        
         <FooterComponent />
       </UserContextProvider>
     </Router>
