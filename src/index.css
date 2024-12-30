@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl font-semibold mb-5;
+  }
+
+  .section-description {
+    @apply text-sm max-w-96;
+  }
+
+  .all-doctor-left-button {
+    @apply border border-gray-300 cursor-pointer p-2 rounded-md w-6/12 lg:w-full;
+  }
+
+  .active-button {
+    @apply bg-[#E2E5FF] text-black;
+  }
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(95 111 255 / var(--tw-bg-opacity));
+}
+
+.border-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(95 111 255 / var(--tw-border-opacity));
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+#doctor-experience,
+#doctor-speciality {
+  top: -8px;
+}
+
+.MuiInputLabel-shrink,
+.MuiInputLabel-shrink {
+  top: 0 !important;
+}
